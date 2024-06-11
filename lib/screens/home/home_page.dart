@@ -1,14 +1,9 @@
-import 'package:dominos_pizza/core/colors.dart';
-import 'package:dominos_pizza/core/text_styles.dart';
-import 'package:dominos_pizza/models/product/product_model.dart';
 import 'package:dominos_pizza/screens/home/bloc/home_bloc.dart';
 import 'package:dominos_pizza/widgets/cards/category_card.dart';
 import 'package:dominos_pizza/widgets/general/appbar.dart';
 import 'package:dominos_pizza/widgets/general/circular_progress_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kh_easy_dev/kh_easy_dev.dart';
-import 'dart:ui';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

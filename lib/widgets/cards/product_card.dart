@@ -1,5 +1,8 @@
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:dominos_pizza/core/colors.dart';
 import 'package:dominos_pizza/core/text_styles.dart';
 import 'package:dominos_pizza/models/product/product_model.dart';
+import 'package:dominos_pizza/widgets/general/circular_progress_image.dart';
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatelessWidget {
@@ -16,9 +19,13 @@ class ProductCard extends StatelessWidget {
           child: Container(
             height: height,
             width: height,
-            child: Image.network(
-              product.images.first,
+            color: AppColor.primarySecondColor,
+            child: CachedNetworkImage(
+              imageUrl: product.images.first,
               fit: BoxFit.cover,
+              placeholder: (context, url) => CircularProgressImage(),
+              errorWidget: (context, url, error) =>
+                  Icon(Icons.broken_image, color: Colors.red),
             ),
           ),
         ),

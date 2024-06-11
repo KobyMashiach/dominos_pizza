@@ -1,4 +1,5 @@
 import 'package:dominos_pizza/core/text_styles.dart';
+import 'package:dominos_pizza/core/translates/get_tran.dart';
 import 'package:dominos_pizza/models/category/category_model.dart';
 import 'package:dominos_pizza/models/product/product_model.dart';
 import 'package:dominos_pizza/widgets/cards/product_card.dart';
@@ -16,7 +17,7 @@ class CategoryCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          category.title,
+          appTranslate(category.title),
           style: AppTextStyle().cardTitle,
         ),
         SizedBox(height: 12),

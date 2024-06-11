@@ -1,0 +1,21 @@
+{
+    "login": "התחבר",
+    "login_title": "התחברות",
+    "user_name": "שם משתמש",
+    "password": "סיסמה",
+    "name": "שם",
+    "phone_number": "מספר טלפון",
+    "phone": "טלפון",
+    "email": "אימייל",
+    "email_address": "כתובת מייל",
+    "register": "הירשם",
+    "register_title": "הרשמה",
+    "no_account": "אין משתמש?",
+    "description": "תיאור",
+    "product": "מוצר",
+    "price": "מחיר",
+    "discount": "הנחה",
+    "discount_price": "מחיר הנחה",
+    "amount": "כמות",
+    "forget_password": "שכחת סיסמה?"
+}
